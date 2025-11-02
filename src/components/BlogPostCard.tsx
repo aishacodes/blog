@@ -7,7 +7,7 @@ interface BlogPostProps {
 }
 
 export const BlogPostCard = ({ post, onEdit, onDelete }: BlogPostProps) => {
-  const formatDate = (dateString: string) => {
+  const formatDate = (dateString: string | Date) => {
     const date = new Date(dateString);
     return date.toLocaleDateString("en-US", {
       year: "numeric",
