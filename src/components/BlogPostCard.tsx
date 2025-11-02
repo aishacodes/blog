@@ -17,7 +17,7 @@ export const BlogPostCard = ({ post, onEdit, onDelete }: BlogPostProps) => {
   };
 
   return (
-    <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow mb-4">
+    <article className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow mb-4 h-full">
       <div className="flex justify-between items-start mb-3">
         <div className="flex-1">
           <h3 className="text-2xl font-bold text-gray-900 mb-2">

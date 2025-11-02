@@ -9,7 +9,7 @@ interface BlogListProps {
 
 const BlogList = ({ posts, onEdit, onDelete }: BlogListProps) => {
   return (
-    <div className="">
+    <div className=" grid grid-cols-1 md:grid-cols-2 gap-6">
       {posts.map((post) => (
         <div key={post.id} className="relative">
           <BlogPostCard post={post} onEdit={onEdit} onDelete={onDelete} />
